@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: lightgreen;
+}
+.top-heading{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.input-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 4px;
+    width: 40%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+input {
+    display: flex;
+    align-items: center;
+    padding: 10px 8px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.input-search .fa-solid {
+    font-size: 18px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background-color: coral;
+    opacity: 0.5;
+}
+
+.fa-solid:active,.fa-solid:hover {
+    opacity: 1;
+}
+.error{
+    display: none;
+}
+.error p{
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    margin-top: 10%;
+    background-color: black;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+.degre-greet {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.temp {
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.city {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.more-details {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 10%;
+}
+.weather-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.weather-img img{
+    width: 150px;
+    height: 150px;
+}
+.humidity,
+.wind {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.humidity img,
+.wind img {
+    height: 50px;
+}
+
+.humidity-detaile h2,
+.wind-detaile h2 {
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 16px;
+}
+
+.wind-detaile p,
+.humidity-detaile p {
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.Data-screen{
+    display: none;
+}
+@media screen and (max-width: 480px) {
+    .top-heading{
+        padding-bottom: 10px;
+    }
+    .top-heading h1{
+        font-size: 20px;
+    }
+    .more-details{
+        flex-direction: column;
+    }
+    .wind{
+        margin-top: 20px;
+    }
+    .input-search{
+        width: 80%;
+    }
+  }

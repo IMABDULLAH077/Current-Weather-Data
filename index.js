@@ -21,22 +21,22 @@ async function weatherData(city) {
         document.querySelector(".humidity-value").innerHTML = data.main.humidity + "%"
         
         if (data.weather[0].main == "Clear") {
-            Main_img.src = "imgs/clear.png"
+            Main_img.src = "clear.png"
         }
         else if (data.weather[0].main == "Clouds") {
             Main_img.src = "clouds.png"
         }
         else if (data.weather[0].main == "Drizzle") {
-            Main_img.src = "imgs/drizzle.png"
+            Main_img.src = "drizzle.png"
         }
         else if (data.weather[0].main == "Rain") {
-            Main_img.src = "imgs/rain.png"
+            Main_img.src = "rain.png"
         }
         else if (data.weather[0].main == "Mist") {
-            Main_img.src = "imgs/mist.png"
+            Main_img.src = "mist.png"
         }
         else if (data.weather[0].main == "Snow") {
-            Main_img.src = "imgs/snow.png"
+            Main_img.src = "snow.png"
         }
         
         Display_Data.style.display = "block"

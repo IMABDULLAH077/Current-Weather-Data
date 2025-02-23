@@ -24,7 +24,7 @@ async function weatherData(city) {
             Main_img.src = "imgs/clear.png"
         }
         else if (data.weather[0].main == "Clouds") {
-            Main_img.src = "imgs/clouds.png"
+            Main_img.src = "clouds.png"
         }
         else if (data.weather[0].main == "Drizzle") {
             Main_img.src = "imgs/drizzle.png"
